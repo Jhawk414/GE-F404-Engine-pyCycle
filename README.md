@@ -1,9 +1,11 @@
 # GE-F404-Engine-pyCycle
-# Purpose: Models/Matches performance of GE's F404-GE-402 engine to publicly available data at both On-Design & Off-Design conditions using pyCycle.
+## Purpose:
+Models/Matches performance of GE's F404-GE-402 engine to publicly available data at both On-Design & Off-Design conditions using pyCycle.
 
-# Status: In-progress as of 15 July '25 (started June '25). I'm currently working to balance the bypass duct- and LPT- exit pressures (extraction ratio).
+## Status:
+In-progress as of 15 July '25 (started June '25). I'm currently working to balance the bypass duct- and LPT- exit pressures (extraction ratio).
 
-## Strategy:
+### Strategy:
 Adjust the design point (SLS) cycle parameters to achieve the desired off-design point (OD) estimated thrust. Unclassified data is used merely to _estimate_ the design parameters $(OPR, \pi_F, BPR, \pi_{HPT/LPT})$, which are then tweaked to achieve the desired OD thrust.
 
 The CRZ thrust is estimated using the thrust lapse equations (_Mattingly, 2018_)
