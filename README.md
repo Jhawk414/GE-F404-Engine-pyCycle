@@ -1,18 +1,18 @@
 # GE-F404-Engine-pyCycle
 ## Purpose:
-Models/Matches performance of GE's F404-GE-402 engine to publicly available data at both On-Design & Off-Design conditions using pyCycle.
+Models/Matches performance of GE's F404-GE-402 engine to publicly available data at both On-Design & Off-Design (OD) conditions using pyCycle.
 
 ## Status:
-In-progress as of 15 July '25 (started June '25). I'm currently working to balance the bypass duct- and LPT- exit pressures (extraction ratio).
+In-progress as of 15 July '25 (started June '25). I'm currently working to balance the bypass duct- and LPT- exit pressures (extraction ratio "ER").
 
 ### Strategy:
-Adjust the design point (SLS) cycle parameters to achieve the desired off-design point (OD) estimated thrust. Unclassified data is used merely to _estimate_ the design parameters $(OPR, \pi_F, BPR, \pi_{HPT/LPT})$, which are then tweaked to achieve the desired OD thrust.
+Adjust the design point (SLS) cycle parameters to achieve the desired off-design point estimated thrust. Unclassified data is used merely to _estimate_ the design parameters $(OPR, \pi_F, BPR, \pi_{HPT/LPT})$, which are then tweaked to achieve the desired OD thrust.
 
 The CRZ thrust is estimated using the thrust lapse equations (_Mattingly, 2018_)
 
-if $$\theta_0 \leq \theta_{0\text{break}} \quad \Longrightarrow \quad \alpha = 0.6\delta_0 $$
+if $$\ \theta_0 \leq \theta_{0\text{break}} \quad \Longrightarrow \quad \alpha = 0.6\delta_0 $$
 
-if $$\theta_0 > \theta_{0\text{break}} \quad \Longrightarrow \quad \alpha = 0.6\delta_0 \left(1 - 2.5 \frac{\theta_0 - \theta_{0\text{break}}}{\theta_0} \right)$$
+if $$\ \theta_0 > \theta_{0\text{break}} \quad \Longrightarrow \quad \alpha = 0.6\delta_0 \left(1 - 2.5 \frac{\theta_0 - \theta_{0\text{break}}}{\theta_0} \right)$$
 
 where:
 
