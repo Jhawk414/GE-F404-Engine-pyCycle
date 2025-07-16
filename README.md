@@ -6,9 +6,11 @@ Models/Matches performance of GE's F404-GE-402 engine to publicly available data
 In-progress as of 15 July '25 (started June '25). I'm currently working to balance the bypass duct- and LPT- exit pressures (extraction ratio "ER").
 
 ### Strategy:
-Adjust the design point (SLS) cycle parameters to achieve the desired off-design point estimated thrust. Unclassified data is used merely to _estimate_ the design parameters $(OPR,\ BPR, \pi_{\text{Fan}},\ \pi_{HPT/LPT})$, which are then tweaked to achieve the desired OD thrust.
+Adjust the design point cycle parameters to achieve the desired OD estimated thrust. Unclassified data is used merely to _estimate_ the design parameters $(OPR,\ BPR, \pi_{\text{Fan}},\ \pi_{HPT/LPT})$, which are then tweaked to achieve the desired OD thrust.
 
-The OD thrust&mdash;which is assumed as cruise ("CRZ")&mdash;is estimated using the thrust lapse equations (_Mattingly, 2018_)
+Whilst cruise (CRZ) is typically chosen as a turbofan's design point, this project initially choses the sea-level static (SLS) as the design point since for simplicity since most unclassified data exists exists at SLS conditions (makes performance matching easier).
+
+The OD thrust&mdash;which is assumed as cruise ("CRZ")&mdash;is estimated using the thrust lapse equations (_Mattingly, 2018_):
 
 if $$\ \theta_0 \leq \theta_{0\text{break}} \quad \Longrightarrow \quad \alpha = 0.6\delta_0 $$
 
