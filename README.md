@@ -8,10 +8,14 @@ Adjust the design point (SLS) cycle parameters to achieve the desired off-design
 
 The CRZ thrust is estimated using the thrust lapse equations (_Mattingly, 2018_)
 
-$$\theta_0 \leq \theta_{0\text{break}} \quad \alpha = 0.6\delta_0 $$
+if $$\theta_0 \leq \theta_{0\text{break}} \quad \Longrightarrow \quad \alpha = 0.6\delta_0 $$
 
-$$\theta_0 > \theta_{0\text{break}} \quad \alpha = 0.6\delta_0 \left(1 - 2.5 \frac{\theta_0 - \theta_{0\text{break}}}{\theta_0} \right)$$
+if $$\theta_0 > \theta_{0\text{break}} \quad \Longrightarrow \quad \alpha = 0.6\delta_0 \left(1 - 2.5 \frac{\theta_0 - \theta_{0\text{break}}}{\theta_0} \right)$$
 
 where:
 
 $$\alpha = \frac{T_{OD}}{T_{SL}} = \frac{\text{Installed Thrust}}{\text{Thrust}_{SLS}}$$
+
+$$\delta_0 = \frac{P_{t0}}{P_{\text{std}}}$$
+
+$$\theta_0 = \frac{T_{t0}}{T_{\text{std}}}$$
