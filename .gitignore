@@ -9,3 +9,6 @@ venv/
 # Ignore Python cache
 __pycache__/
 *.pyc
+
+# Ignore large HTML output folders
+MFTF_od_CRZ_out/
