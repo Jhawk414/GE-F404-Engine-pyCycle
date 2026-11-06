@@ -1,4 +1,9 @@
 # GE-F404-Engine-pyCycle
+
+> [!CAUTION]
+> **This repository is archived and read-only.** It is no longer maintained.
+> Development has moved to the actively maintained F404 repo: **[Jhawk414/F404](https://github.com/Jhawk414/F404)**.
+
 ## Purpose:
 Models/Matches performance of GE's F404-GE-402 engine to publicly available data at both On-Design & Off-Design (OD) conditions using pyCycle.
 
